@@ -2,32 +2,380 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+    
+h5 {
+    font-family: 'Lobster', cursive;
+    font-size: 12px;
+  }
+  .container{
+
+      width: 100%;
+      margin: 0px;
+      margin-top: 15px;
+      text-align: center;
+  
+    
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+  }
+
+  li {
+      display: inline;
+      text-decoration-line: none;
+  }
+
+
+  .card {
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+  }
+
+ 
+
+  .card-content{
+      background-color: teal;
+      padding: 25px;
+      margin-bottom: 15px;
+      color: white;
+      min-width: 20vw;
+      max-width: 20vw;
+  }
+  .card-footer{
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 15px;
+    color: black;
+    box-shadow: 4px 4px 4px black;
+    overflow: hidden;
+}
+.f {
+    color:rgb(204, 120, 42);;
+    font-size: 38px;
+    font-family: 'Lobster', cursive;
+    font-style: bold;
+}
+.c {
+    color: teal;
+    font-size: 38px;
+    font-family: 'Lobster', cursive;
+    font-style: bold;
+}
+.sf {
+    font-size: 12px;
+    font-style: italic;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+._form{
+    position: absolute;
+    top: 2px;
+    left: 78%;
+    background-color:wheat;
+    min-width: 15vw;
+    max-width: 15vw;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 4px 4px 4px gray;
+    overflow: hidden;
+}
+.logo img{
+    position: absolute;
+    top: 5px;
+    left: 3%;
+    max-width: 25vw;
+    min-width: 25vw;
+    max-height: 25vh;
+    min-height: 25vh;
+
+}
+
+.banner {
+    font-size: 48px;
+    text-shadow: 6px 6px 6px gray;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+
+.city, .days {
+    font-family: 'Playfair Display', serif;
+}
+.wind-prop, td {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+}
+
+
+.subtitle{
+    font-family: 'Lobster', cursive;
+}
+
+
+
+.btn {
+    min-width: 80px;
+    min-height: 38px;
+    background-color: teal;
+    color: white;
+    border-radius: 8px;
+}
+  
+  .box {
+      border: 1px solid black;
+      box-shadow: 4px 4px 4px gray;
+  }
+  
+  img {
+      width: 150px;
+      height: 100px;
+  }
+  
+  table {
+      text-align: center;
+      border: 1px solid greenyellow;
+      background-color: black;
+      color: white;
+      width: 100%;
+      font-size: 14px;
+      overflow: hidden;
+  }
+
+  table th {
+      font-size: 10px;
+  }
+
+  .text-input {
+      min-width: '10vw';
+      max-width: '10vw';
+  
+  }
+  .text-example{
+      font-family: 'Lobster', cursive;
+      font-size: 12px;
+  }
+
+  .section-map {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 200px;
+    }
+    
+    #googlemap {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .showbarra {
+        animation: barra-spin 2s infinite ease-in-out;
+        display: none;
+    }
+
+  .subtitle {
+    animation: subTitle 2s infinite ease-in-out;
+}
+
+  @keyframes subTitle{
+      from {
+          opacity: 0;
+      }
+      to{
+          opacity: 1;
+      }
+  }
+  @keyframes barra-spin {
+    from {
+      transform: rotate(0deg);
+      color: blue;
+      opacity: 0;
+    }
+    to {
+      transform: rotate(360deg);
+      color: green;
+      opacity: 1;
+    }
+  }
+
+
+
+@media only screen and (max-width:786px){
+
+  body {
+      margin: 0;
+      box-sizing: border-box;
+      background-color: black;
+  }
+  .container{
+
+    width: 100%;
+    margin-top: 130px;
+    text-align: center;
+   
+    color: white;
+
+  
+}
+
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column; 
+  flex-wrap: nowrap;
+ 
+}
+
+li {
+    display: inline;
+    text-decoration-line: none;
+   
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+
+
+.card-content{
+    background-color: teal;
+    padding: 1px;
+
+    margin-bottom: 15px;
+    margin-top: 50px;
+   
+    color: white;
+    min-width: 80vw;
+    max-width: 80vw;
+}
+.card-footer{
+  background-color: white;
+  padding: 5px;
+  margin: 15px;
+  
+  color: black;
+  box-shadow: 4px 4px 4px black;
+}
+.f {
+  color:rgb(204, 120, 42);
+  font-size: 38px;
+}
+.c {
+  color: teal;
+  font-size: 38px;
+}
+.sf {
+  font-size: 12px;
+  font-style: italic;
+}
+
+._form{
+  position: absolute;
+  top: 2px;
+  left: 40%;
+  background-color:teal;
+  min-width: 50vw;
+  max-width: 50vw;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 4px 4px 4px black;
+  overflow: hidden;
+  font-size:10px
+}
+
+.logo img{
+  position: absolute;
+  top: 5px;
+  left: 3%;
+  max-width: 40vw;
+  min-width: 40vw;
+  max-height: 25vh;
+  min-height: 25vh;
+
+}
+
+.banner {
+  position: absolute;
+  margin-top: -35px;
+  margin-left: 30%;
+ 
+  font-size: 48px;
+  text-shadow: 8px 8px 8px rgb(204, 120, 42);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.btn {
+  min-width: 80px;
+  min-height: 38px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+img {
+    width: 150px;
+    height: 100px;
+}
+
+table {
+    text-align: center;
+    border: 1px solid greenyellow;
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+table th {
+    font-size: 10px;
+}
+
+.city {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 10%;
+  
+
+}
+
+.text-input {
+  min-width: '40vw';
+  max-width: '40vw';
+
+}
+.text-example{
+  font-family: 'Lobster', cursive;
+  font-size: 12px;
+}
+.subtitle {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 55%;
+  animation: subTitle 2s infinite ease-in-out;
+}
+
+@keyframes subTitle{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 }
